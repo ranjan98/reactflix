@@ -14,7 +14,7 @@ const Home = () => {
                 <img className="header__logo" src={reactflix_logo} alt="ReactFlix Logo" />
                 <Link className="signin__link btn__signin" to="/signin"><buton name="signin">Sign In</buton></Link>
             </header>
-            <div class="text__container">
+            <div className="text__container">
                 <h1 className="text__large">
                     Unlimited movies, TV shows and more.
                 </h1>
@@ -25,10 +25,10 @@ const Home = () => {
                 <h3 className="text__small">
                     Ready to watch? Enter your email to create or restart your membership.
                 </h3>
-                <div class="form__group">
-                    <input type="text" name="email" placeholder="Email address" class="input__email" />
+                <div className="form__group">
+                    <input type="text" name="email" placeholder="Email address" className="input__email" />
                     <button type="submit" name="signup" className="btn__signup">
-                        Get Started {">"}
+                        {"Get Started >"}
                     </button>
                 </div>
                 <div className="emptybox"></div>

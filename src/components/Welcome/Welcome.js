@@ -1,11 +1,18 @@
-import React from 'react';
+import React, { useContext } from 'react';
 
 import Row from '../Row';
 import requests from '../../requests';
 import Banner from '../Banner';
 import Nav from '../Nav';
+import { AuthContext } from '../../context/auth-context';
+import { Redirect } from 'react-router-dom';
 
 const Welcome = () => {
+    const auth = useContext(AuthContext);
+
+    if (!auth.isLoggedIn) {
+        return <Redirect to="/signin" />;
+    }
     return (
         <div>
             <Nav />
