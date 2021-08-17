@@ -1,5 +1,4 @@
-ReactFlix
-
+# Reactflix
 
 ![Reactflix Home](https://github.com/ranjan98/reactflix/blob/main/src/assets/demo/reactflix_home.png)
 
