@@ -28,7 +28,7 @@ const SignIn = () => {
         event.preventDefault();
         try {
             const responseData = await sendRequest(
-                process.env.BACKEND_API + '/users/login',
+                process.env.REACT_APP_BACKEND_API + '/users/login',
                 'POST',
                 JSON.stringify({
                     email: email,
