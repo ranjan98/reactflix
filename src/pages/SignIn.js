@@ -28,7 +28,7 @@ const SignIn = () => {
         event.preventDefault();
         try {
             const responseData = await sendRequest(
-                'http://localhost:5000/api/users/login',
+                process.env.BACKEND_API + '/users/login',
                 'POST',
                 JSON.stringify({
                     email: email,
